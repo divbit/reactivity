@@ -7,36 +7,7 @@ import Form from "./Form"
 class WebApp extends Component {
 
     state = {
-
         characters: []
-        // characters: [
-// 
-            // {
-            //     name: 'Charlie',
-            //     job: 'Janitor'
-            // },
-            // {
-            //     name: 'Mac',
-            //     job: 'Bouncer'
-            // },
-            // {
-            //     name: 'Dee',
-            //     job: 'Aspring actress'
-            // },
-            // {
-            //     name: 'Dennis',
-            //     job: 'Bartender'
-            // },
-            // {
-            //     name: 'Joe',
-            //     job: 'Pro Player'
-            // },
-            // {
-            //     name: 'James',
-            //     job: 'Gamer'
-            // }
-
-        // ],
     }
 
     removeCharacter = index => {
@@ -56,14 +27,17 @@ class WebApp extends Component {
 
     render() {
 
-        const { characterData } = this.props;
+        //const { characterData } = this.props;
         const { characters } = this.state;
 
         return (
 
             <div className = "container" >
-                <Table characterData={characters} removeCharacter = {this.removeCharacter} />
+            <p />
                 <Form handleSubmit={this.handleSubmit} />
+                <p />
+                <Table characterData={characters} removeCharacter = {this.removeCharacter} />
+                
             </div> 
         )
     }

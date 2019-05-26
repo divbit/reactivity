@@ -37,7 +37,7 @@ class Form extends Component {
 
         return (
 
-            <form>
+            <form onSubmit={e => { e.preventDefault(); }}>
             <div className="form-row">
                 <div class="form-group col-md-4">
                     <label for="formName">Name </label>
@@ -68,12 +68,9 @@ class Form extends Component {
             </div>
                     <input type="button"
                         class="btn btn-primary"
-                        
-                                        value="Submit"
+                        value="Submit"
                         onClick={this.submitForm}
                     />
-
-
             </form>
         );
     }
