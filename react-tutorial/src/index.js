@@ -1,12 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-//import Table from './Table';
 import WebApp from './WebApp';
 import * as serviceWorker from './serviceWorker';
-
-import Table from './Table'
 
 //ReactDOM.render(<App />, document.getElementById('root'));
 

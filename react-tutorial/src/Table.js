@@ -15,7 +15,7 @@ const TableHeader = () => {
     );
 }
 
-const TableBody = props => {
+const TableBody = (props) => {
 
     const rows = props.characterData.map((row, index) => {
         return (

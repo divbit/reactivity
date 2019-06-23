@@ -2,7 +2,7 @@ import React, {
     Component
 } from 'react';
 import Table from './Table';
-import Form from "./Form"
+import Form from "./Form";
 
 class WebApp extends Component {
 
@@ -33,11 +33,19 @@ class WebApp extends Component {
         return (
 
             <div className = "container" >
-            <p />
+            <div className="row">
+            <div className="col-md-4 offset-1">
+                <p />
+
                 <Form handleSubmit={this.handleSubmit} />
+                
+                <p />
+                </div>
+                <div className="col-md-7">
                 <p />
                 <Table characterData={characters} removeCharacter = {this.removeCharacter} />
-                
+                </div>
+                </div>
             </div> 
         )
     }
