@@ -6,6 +6,7 @@ import Clock from './Clock';
 import Toggle from './Toggle';
 import Page from './Page';
 import NameForm from './NameForm';
+import EssayForm from './EssayForm';
 import * as serviceWorker from './serviceWorker';
 
 
@@ -20,6 +21,8 @@ ReactDOM.render(<Toggle />, document.getElementById('toggle'));
 ReactDOM.render(<Page />, document.getElementById('page'));
 
 ReactDOM.render(<NameForm />, document.getElementById('nameform'));
+
+ReactDOM.render(<EssayForm />, document.getElementById('essayform'));
 
 // function tick(){
 
